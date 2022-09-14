@@ -9,7 +9,10 @@ const Note = db.define("note",{
     note_title: DataTypes.TEXT,
     note_date: DataTypes.DATE,
     note_content: DataTypes.TEXT,
-    is_note_deleted: DataTypes.BOOLEAN
+    is_note_deleted: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
+    }
 }, {
     timestamps: false
 })

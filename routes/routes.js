@@ -6,8 +6,8 @@ router.get("/", viewNotes)
 
 router.post("/add-note", addNote)
 
-router.put("/update-note", updateNote)
+router.put("/update-note/:id", updateNote)
 
-router.delete("/delete-note", deleteNote)
+router.delete("/delete-note/:id", deleteNote)
 
 module.exports = router
